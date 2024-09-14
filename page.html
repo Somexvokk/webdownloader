@@ -3,86 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Download Page - ISO Files & Tools</title>
+    <title>File Download Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #343a40; /* Darker background */
-            padding: 20px;
+            background-color: #212529; /* Dark Gray */
+            color: #f8f9fa; /* Light color for text */
             text-align: center;
+            margin-top: 50px;
         }
-        h1 {
-            color: #f8f9fa; /* Light text color for the title */
-        }
-        .category-section {
-            margin: 20px;
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #e9ecef; /* Light section background */
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-            width: 45%; /* Reduced width for side-by-side layout */
-            border: 1px solid #ced4da; /* Light border for sections */
+            border-radius: 10px;
+            background-color: #343a40; /* Dark Slate */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
         }
-        .category-section h2 {
-            color: #495057; /* Medium gray for section titles */
+        .download-button {
+            display: inline-block;
+            width: 80%;
+            padding: 15px 0;
+            font-size: 18px;
+            background-color: #495057; /* Medium Dark Gray */
+            color: #f8f9fa; /* Light color for text */
+            border: 2px solid #adb5bd; /* Light gray border */
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
         }
-        .category-container {
-            display: flex;
-            justify-content: space-around; /* Space between categories */
-            align-items: flex-start; /* Align categories at the top */
+        .download-button:hover {
+            background-color: #6c757d; /* Lighter Gray */
+            border-color: #ced4da; /* Slightly lighter border on hover */
+            transform: scale(1.1); /* Grow the button when hovered */
+        }
+        .file-list {
             margin-top: 20px;
         }
-        .buttons-container {
-            display: flex;
-            justify-content: space-around; /* Space between buttons */
-            margin-top: 10px;
-        }
-        a.download-button {
-            display: inline-block;
-            padding: 15px 30px; /* Increased padding for larger buttons */
-            color: #f8f9fa; /* Light button text */
-            background-color: #495057; /* Dark gray button background */
-            text-decoration: none;
-            border-radius: 5px;
-            border: 1px solid #adb5bd; /* Border color */
-            transition: transform 0.3s ease; /* Smooth animation on hover */
-            width: 45%; /* Adjust button width for side-by-side layout */
-        }
-        a.download-button:hover {
-            background-color: #212529; /* Darker hover color */
-            transform: scale(1.1); /* Enlarge button on hover */
-        }
-        p {
-            color: #6c757d; /* Muted text color */
+        .file-item {
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Download ISO Files & Tools</h1>
-
-    <!-- Categories Container (Side by Side) -->
-    <div class="category-container">
-        <!-- ISO Files Section -->
-        <div class="category-section">
-            <h2>ISO Files</h2>
-            <p>Select the ISO file to download:</p>
-            <div class="buttons-container">
-                <!-- Example ISO files side by side -->
-                <a class="download-button" href="files/example_iso_1.iso" download="example_iso_1.iso">Download ISO File 1</a>
-                <a class="download-button" href="files/example_iso_2.iso" download="example_iso_2.iso">Download ISO File 2</a>
+    <div class="container">
+        <h2>Download Files</h2>
+        <p>Click the buttons below to download files from the website.</p>
+        
+        <div class="file-list">
+            <div class="file-item">
+                <a href="files/sample1.pdf" class="download-button" download>Download PDF File</a>
             </div>
-        </div>
-
-        <!-- Tools Section -->
-        <div class="category-section">
-            <h2>Tools</h2>
-            <p>Select the tool to download:</p>
-            <div class="buttons-container">
-                <!-- Example tools side by side -->
-                <a class="download-button" href="files/example_tool_1.exe" download="example_tool_1.exe">Download Tool 1</a>
-                <a class="download-button" href="files/example_tool_2.zip" download="example_tool_2.zip">Download Tool 2</a>
+            <div class="file-item">
+                <a href="files/sample2.zip" class="download-button" download>Download ZIP File</a>
+            </div>
+            <div class="file-item">
+                <a href="files/sample3.mp3" class="download-button" download>Download MP3 File</a>
+            </div>
+            <div class="file-item">
+                <a href="files/sample4.jpg" class="download-button" download>Download Image File</a>
             </div>
         </div>
     </div>
