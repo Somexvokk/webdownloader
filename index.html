@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Download Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #212529; /* Dark Gray */
+            color: #f8f9fa; /* Light color for text */
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #343a40; /* Dark Slate */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+        }
+        .download-button {
+            display: inline-block;
+            width: 80%;
+            padding: 15px 0;
+            font-size: 18px;
+            background-color: #495057; /* Medium Dark Gray */
+            color: #f8f9fa; /* Light color for text */
+            border: 2px solid #adb5bd; /* Light gray border */
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .download-button:hover {
+            background-color: #6c757d; /* Lighter Gray */
+            border-color: #ced4da; /* Slightly lighter border on hover */
+            transform: scale(1.1); /* Grow the button when hovered */
+        }
+        .file-list {
+            margin-top: 20px;
+        }
+        .file-item {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Download Files</h2>
+        <p>Click the buttons below to download files from the website.</p>
+        
+        <div class="file-list">
+            <div class="file-item">
+                <a href="files/MediaCreationTool_22H2.exe" class="download-button" download>Download Windows 10 Media Creator</a>
+            </div>
+            <div class="file-item">
+                <a href="https://cdimage.kali.org/kali-2024.3/kali-linux-2024.3-live-amd64.iso" class="download-button" download>Download Kali Linux</a>
+            </div>
+            <div class="file-item">
+                <a href="files/rufus-4.5.exe" class="download-button" download>Download Rufus</a>
+            </div>
+            <div class="file-item">
+                <a href="https://downloads.raspberrypi.com/rpd_x86/images/rpd_x86-2022-07-04/2022-07-01-raspios-bullseye-i386.iso" class="download-button" download>Download Raspberry Pi Desktop</a>
+            </div>
+
+            <div class="file-item"></div>
+                <a href="https://download.fedoraproject.org/pub/fedora/linux/releases/40/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-40-1.14.iso" class="download-button" download>Download Fedora Linux</a>
+            </div>
+            <div class="file-item">
+                <a href="https://url.medicatusb.com/installerwindows" class="download-button" download>Download Medicat Usb usb Tool (32gb)</a>
+            </div>
+            <div class="file-item">
+                <a href="https://www.hirensbootcd.org/files/HBCD_PE_x64.iso" class="download-button" download>Download Hiren usb tool (4gb)</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
