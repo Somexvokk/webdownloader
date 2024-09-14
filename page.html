@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Download Page - ISO Files & Tools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #343a40; /* Darker background */
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #f8f9fa; /* Light text color for the title */
+        }
+        .category-section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #e9ecef; /* Light section background */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            width: 45%; /* Reduced width for side-by-side layout */
+            border: 1px solid #ced4da; /* Light border for sections */
+        }
+        .category-section h2 {
+            color: #495057; /* Medium gray for section titles */
+        }
+        .category-container {
+            display: flex;
+            justify-content: space-around; /* Space between categories */
+            align-items: flex-start; /* Align categories at the top */
+            margin-top: 20px;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: space-around; /* Space between buttons */
+            margin-top: 10px;
+        }
+        a.download-button {
+            display: inline-block;
+            padding: 15px 30px; /* Increased padding for larger buttons */
+            color: #f8f9fa; /* Light button text */
+            background-color: #495057; /* Dark gray button background */
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #adb5bd; /* Border color */
+            transition: transform 0.3s ease; /* Smooth animation on hover */
+            width: 45%; /* Adjust button width for side-by-side layout */
+        }
+        a.download-button:hover {
+            background-color: #212529; /* Darker hover color */
+            transform: scale(1.1); /* Enlarge button on hover */
+        }
+        p {
+            color: #6c757d; /* Muted text color */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Download ISO Files & Tools</h1>
+
+    <!-- Categories Container (Side by Side) -->
+    <div class="category-container">
+        <!-- ISO Files Section -->
+        <div class="category-section">
+            <h2>ISO Files</h2>
+            <p>Select the ISO file to download:</p>
+            <div class="buttons-container">
+                <!-- Example ISO files side by side -->
+                <a class="download-button" href="files/example_iso_1.iso" download="example_iso_1.iso">Download ISO File 1</a>
+                <a class="download-button" href="files/example_iso_2.iso" download="example_iso_2.iso">Download ISO File 2</a>
+            </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="category-section">
+            <h2>Tools</h2>
+            <p>Select the tool to download:</p>
+            <div class="buttons-container">
+                <!-- Example tools side by side -->
+                <a class="download-button" href="files/example_tool_1.exe" download="example_tool_1.exe">Download Tool 1</a>
+                <a class="download-button" href="files/example_tool_2.zip" download="example_tool_2.zip">Download Tool 2</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
